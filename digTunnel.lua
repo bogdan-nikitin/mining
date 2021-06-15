@@ -28,6 +28,7 @@ function placeChestBackAndDrop()
     end
     forceMove.up()
     forceMove.back()
+    turtle.digDown()
     turtle.select(constants.CHEST_SLOT)
     if not turtle.placeDown() then
         return false
@@ -46,6 +47,7 @@ function placeTorchRight()
     forceMove.up()
     turtle.turnRight()
     forceMove.forward()
+    turtle.digDown()
     turtle.select(constants.TORCH_SLOT)
     turtle.placeDown()
     turtle.turnLeft()
@@ -58,9 +60,10 @@ end
 
 
 function digFor(distance)
+    digVein()
     for i = 1, distance do
-        digVein()
         forceMove.forward()
+        digVein()
     end
 end
 

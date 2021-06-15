@@ -107,6 +107,7 @@ function digTunnel(width, height, maxLayers)
     while layersN < maxLayers do
         if not shared.hasFuel() then
             err("Not enough fuel! Min level is " .. constants.MIN_FUEL)
+            return false
         end
         if layersN % constants.TORCH_DISTANCE == 0 then
             if not placeTorchRight() then

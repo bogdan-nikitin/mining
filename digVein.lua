@@ -1,6 +1,6 @@
-local digConfig = require("digConfig")
-local shared = require("shared")
-local forceMove = require("forceMove")
+local digConfig = require("/mining/digConfig")
+local shared = require("/mining/shared")
+local forceMove = require("/mining/forceMove")
 
 
 function isSuitable(data, config)

@@ -1,4 +1,4 @@
-local constants = require("constants")
+local constants = require("/mining/constants")
 
 function hasFreeSpace()
     return turtle.getItemSpace(constants.LAST_FREE_SLOT) == 64

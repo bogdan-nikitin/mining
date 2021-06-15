@@ -1,9 +1,9 @@
 -- There must be free space around turtle so it can place chest and torch!
 
-local constants = require("constants")
-local shared = require("shared")
-local digVein = require("digVein").digVein
-local forceMove = require("forceMove")
+local constants = require("/mining/constants")
+local shared = require("/mining/shared")
+local digVein = require("/mining/digVein").digVein
+local forceMove = require("/mining/forceMove")
 
 function log(msg)
     local time = os.time()
